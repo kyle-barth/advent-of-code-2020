@@ -6,7 +6,13 @@ const magicMultiplier = (arr: number[], num: number) => {
 
   arr.some((first) => {
     arr.some((second) => {
-      first + second === num ? (result = first * second) : false;
+      arr.some((third) =>
+        first + second + third === num
+          ? (result = first * second * third)
+          : false
+      );
+
+      return result;
     });
 
     return result;
