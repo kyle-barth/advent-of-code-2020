@@ -7,7 +7,6 @@ const trekTheForest = (
 ) => {
   let total: number = 0;
   let charIndex: number = movement.right;
-  let _: string;
 
   for (let i = movement.down; i < arr.length; i += movement.down) {
     const pos: number = charIndex % arr[i].length;
