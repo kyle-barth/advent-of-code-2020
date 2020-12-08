@@ -1,4 +1,4 @@
-const input: string = `[paste input here]`;
+const input: string = `paste input here`;
 const _: string[] = input.split("\n");
 
 const validPwds = (arr: string[]) => {
